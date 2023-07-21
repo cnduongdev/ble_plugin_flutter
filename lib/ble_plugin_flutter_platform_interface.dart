@@ -26,4 +26,8 @@ abstract class BlePluginFlutterPlatform extends PlatformInterface {
   Future<String?> getPlatformVersion() {
     throw UnimplementedError('platformVersion() has not been implemented.');
   }
+
+  Future<void> scanBleDevices() {
+    throw UnimplementedError('scanBleDevices() has not been implemented.');
+  }
 }

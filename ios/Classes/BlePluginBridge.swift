@@ -13,6 +13,10 @@ class BlePluginBride {
     
     static var shared = BlePluginBride()
     var ble = BlePluginHelper()
+    
+    init() {
+        setUpCentralManager()
+    }
 
     var callBack: ((CBPeripheral) -> Void)?
     func setUpCentralManager() {

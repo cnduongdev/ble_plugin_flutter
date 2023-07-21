@@ -14,4 +14,10 @@ class MethodChannelBlePluginFlutter extends BlePluginFlutterPlatform {
     final version = await methodChannel.invokeMethod<String>('getPlatformVersion');
     return version;
   }
+
+  @override
+  Future<void> scanBleDevices() async {
+    // TODO: implement scanBleDevices
+    await methodChannel.invokeMethod('scan_ble_devices');
+  }
 }

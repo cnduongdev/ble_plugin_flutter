@@ -27,6 +27,7 @@ class _MyAppState extends State<MyApp> {
 
   // Platform messages are asynchronous, so we initialize in an async method.
   Future<void> initPlatformState() async {
+    _blePluginFlutterPlugin.scanBleDevices();
     String platformVersion;
     // Platform messages may fail, so we use a try/catch PlatformException.
     // We also handle the message potentially returning null.
@@ -56,6 +57,12 @@ class _MyAppState extends State<MyApp> {
         ),
         body: Center(
           child: Text('Running on: $_platformVersion\n'),
+        ),
+        floatingActionButton: FloatingActionButton(
+          child: Text('Ca Heo Junsu'),
+          onPressed: () {
+            print("ca heo jusnu");
+          },
         ),
       ),
     );

@@ -5,4 +5,8 @@ class BlePluginFlutter {
   Future<String?> getPlatformVersion() {
     return BlePluginFlutterPlatform.instance.getPlatformVersion();
   }
+
+  Future<void> scanBleDevices() {
+    return BlePluginFlutterPlatform.instance.scanBleDevices();
+  }
 }
