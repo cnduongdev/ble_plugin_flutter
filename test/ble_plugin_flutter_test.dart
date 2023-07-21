@@ -10,6 +10,12 @@ class MockBlePluginFlutterPlatform
 
   @override
   Future<String?> getPlatformVersion() => Future.value('42');
+
+  @override
+  Future<void> scanBleDevices() {
+    // TODO: implement scanBleDevices
+    throw UnimplementedError();
+  }
 }
 
 void main() {
