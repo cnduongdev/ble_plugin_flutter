@@ -19,7 +19,7 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/integration_test/ios"
 
 SPEC CHECKSUMS:
-  ble_plugin_flutter: ded1dbf2ecfb9a4ec83d2d67f9ae4ec1f076581d
+  ble_plugin_flutter: 02bd5d2e4909ac056474919cf99be0673d7143c2
   Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
   integration_test: 13825b8a9334a850581300559b8839134b124670
 
